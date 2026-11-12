@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <!-- One ASP.NET Core minimal API, published two ways from the same code:
+         dotnet publish -c Release -o out/jit                     the usual JIT build (needs the .NET runtime)
+         dotnet publish -c Release -o out/aot -p:PublishAot=true   Native AOT, one self-contained exe
+       JSON goes through a source-generated context in both builds, which Native AOT requires. -->
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <InvariantGlobalization>true</InvariantGlobalization>
+    <AssemblyName>orders</AssemblyName>
+  </PropertyGroup>
+</Project>

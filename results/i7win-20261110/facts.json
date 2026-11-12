@@ -1,0 +1,12 @@
+{
+  "spring": {
+    "classes_loaded": 7378,
+    "classes_from_aot_cache": 1457,
+    "jit_compiled": 4434
+  },
+  "spring-aot": {
+    "classes_loaded": 7530,
+    "classes_from_aot_cache": 6783,
+    "jit_compiled": 3989
+  }
+}

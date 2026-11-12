@@ -1,0 +1,57 @@
+{
+  "versions": {
+    "java": "openjdk version \"25.0.5\" 2026-10-20 LTS\nOpenJDK Runtime Environment Temurin-25.0.5+8 (build 25.0.5+8-LTS)\nOpenJDK 64-Bit Server VM Temurin-25.0.5+8 (build 25.0.5+8-LTS, mixed mode, sharing)",
+    "graalvm": "openjdk version \"25.0.5.0.3\" 2026-10-24\nOpenJDK Runtime Environment GraalVM CE 25.5.5.0.3+1.1 (build 25.0.5.0.3+1-jvmci-25.5-b26)\nOpenJDK 64-Bit Server VM GraalVM CE 25.5.5.0.3+1.1 (build 25.0.5.0.3+1-jvmci-25.5-b26, mixed mode, sharing)",
+    "java_defaults_on_server_cpus": [
+      "int ActiveProcessorCount                     = -1                                        {product} {default}",
+      "intx CICompilerCount                          = 3                                         {product} {ergonomic}",
+      "size_t MaxHeapSize                              = 8547991552                                {product} {ergonomic}",
+      "uint ParallelGCThreads                        = 4                                         {product} {default}",
+      "bool UseG1GC                                  = true                                      {product} {ergonomic}",
+      "bool UseSerialGC                              = false                                     {product} {default}"
+    ],
+    "spring_boot": "Spring-Boot-Version: 4.1.2",
+    "dotnet_sdk": "10.0.403",
+    "dotnet_runtimes": "Microsoft.AspNetCore.App 8.0.1 [C:\\Program Files\\dotnet\\shared\\Microsoft.AspNetCore.App]\nMicrosoft.AspNetCore.App 10.0.14 [C:\\Program Files\\dotnet\\shared\\Microsoft.AspNetCore.App]\nMicrosoft.NETCore.App 6.0.33 [C:\\Program Files\\dotnet\\shared\\Microsoft.NETCore.App]\nMicrosoft.NETCore.App 7.0.15 [C:\\Program Files\\dotnet\\shared\\Microsoft.NETCore.App]\nMicrosoft.NETCore.App 8.0.1 [C:\\Program Files\\dotnet\\shared\\Microsoft.NETCore.App]\nMicrosoft.NETCore.App 8.0.12 [C:\\Program Files\\dotnet\\shared\\Microsoft.NETCore.App]\nMicrosoft.NETCore.App 10.0.14 [C:\\Program Files\\dotnet\\shared\\Microsoft.NETCore.App]\nMicrosoft.WindowsDesktop.App 6.0.33 [C:\\Program Files\\dotnet\\shared\\Microsoft.WindowsDesktop.App]\nMicrosoft.WindowsDesktop.App 7.0.15 [C:\\Program Files\\dotnet\\shared\\Microsoft.WindowsDesktop.App]\nMicrosoft.WindowsDesktop.App 8.0.1 [C:\\Program Files\\dotnet\\shared\\Microsoft.WindowsDesktop.App]\nMicrosoft.WindowsDesktop.App 8.0.12 [C:\\Program Files\\dotnet\\shared\\Microsoft.WindowsDesktop.App]\nMicrosoft.WindowsDesktop.App 10.0.14 [C:\\Program Files\\dotnet\\shared\\Microsoft.WindowsDesktop.App]",
+    "go_binary": "C:\\bench\\cold-start\\build\\go-orders.exe: go1.27.3",
+    "oha": "oha 1.16.0",
+    "hyperfine": "hyperfine 2.0.0",
+    "os": "Windows-11-10.0.26200-SP0",
+    "cpu": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+    "ram_bytes": 34185895936,
+    "power_plan": "Power Scheme GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (Balanced)"
+  },
+  "sizes": {
+    "spring_jar": 19968667,
+    "spring_aot_extracted": 19761105,
+    "spring_aot_cache": 53477376,
+    "jdk": 304138987,
+    "spring_native_exe": 68411392,
+    "cs_jit_app": 228843,
+    "dotnet_runtime": 109929299,
+    "cs_aot_exe": 10084352,
+    "go_exe": 9839616
+  },
+  "rounds": 5,
+  "sides": [
+    "spring",
+    "spring-aot",
+    "spring-native",
+    "cs-jit",
+    "cs-aot",
+    "go"
+  ],
+  "server_cpus": "0,2,4,6",
+  "client_cpus": "8-15",
+  "connections": 64,
+  "cap_rate": 5000,
+  "short": false,
+  "start_runs": 20,
+  "phases_s": {
+    "idle": 5,
+    "ramp": 20,
+    "steady": 20,
+    "capped": 20
+  },
+  "started": "Tue Nov 10 04:09:06 2026"
+}

@@ -1,0 +1,128 @@
+{
+  "spring": {
+    "label": "Spring Boot, JVM",
+    "start": {
+      "runs": 100,
+      "median_ms": 1549.4,
+      "min_ms": 1473.6,
+      "max_ms": 1652.8,
+      "plain_median_ms": 1540.2
+    },
+    "load": {
+      "rounds": 5,
+      "idle_working_set_mb": 166.4,
+      "idle_private_mb": 195.9,
+      "capped_working_set_mb": 341.1,
+      "first_20s_rps": 124884,
+      "warm_rps": 118051,
+      "warm_p99_ms": 1.22,
+      "capped_p99_ms": 3.01,
+      "plain_warm_rps": 121082
+    }
+  },
+  "spring-aot": {
+    "label": "Spring Boot, JVM + AOT cache",
+    "start": {
+      "runs": 100,
+      "median_ms": 924.2,
+      "min_ms": 858.9,
+      "max_ms": 998.1,
+      "plain_median_ms": 916.6
+    },
+    "load": {
+      "rounds": 5,
+      "idle_working_set_mb": 140.8,
+      "idle_private_mb": 652.7,
+      "capped_working_set_mb": 840.7,
+      "first_20s_rps": 131833,
+      "warm_rps": 120878,
+      "warm_p99_ms": 1.06,
+      "capped_p99_ms": 2.88,
+      "plain_warm_rps": 122326
+    }
+  },
+  "spring-native": {
+    "label": "Spring Boot, native image",
+    "start": {
+      "runs": 100,
+      "median_ms": 56.3,
+      "min_ms": 54.9,
+      "max_ms": 70.7,
+      "plain_median_ms": 55.9
+    },
+    "load": {
+      "rounds": 5,
+      "idle_working_set_mb": 51.3,
+      "idle_private_mb": 62.3,
+      "capped_working_set_mb": 66.8,
+      "first_20s_rps": 63512,
+      "warm_rps": 55381,
+      "warm_p99_ms": 5.7,
+      "capped_p99_ms": 5.6,
+      "plain_warm_rps": 55482
+    }
+  },
+  "cs-jit": {
+    "label": "ASP.NET Core, JIT",
+    "start": {
+      "runs": 100,
+      "median_ms": 172.3,
+      "min_ms": 163.4,
+      "max_ms": 203.3,
+      "plain_median_ms": 175.0
+    },
+    "load": {
+      "rounds": 5,
+      "idle_working_set_mb": 45.8,
+      "idle_private_mb": 15.7,
+      "capped_working_set_mb": 68.3,
+      "first_20s_rps": 190615,
+      "warm_rps": 235916,
+      "warm_p99_ms": 2.07,
+      "capped_p99_ms": 3.25,
+      "plain_warm_rps": 239050
+    }
+  },
+  "cs-aot": {
+    "label": "ASP.NET Core, Native AOT",
+    "start": {
+      "runs": 100,
+      "median_ms": 31.8,
+      "min_ms": 30.8,
+      "max_ms": 34.1,
+      "plain_median_ms": 31.6
+    },
+    "load": {
+      "rounds": 5,
+      "idle_working_set_mb": 19.7,
+      "idle_private_mb": 11.2,
+      "capped_working_set_mb": 36.4,
+      "first_20s_rps": 194301,
+      "warm_rps": 205110,
+      "warm_p99_ms": 4.67,
+      "capped_p99_ms": 2.83,
+      "plain_warm_rps": 205895
+    }
+  },
+  "go": {
+    "label": "Go net/http",
+    "start": {
+      "runs": 100,
+      "median_ms": 15.2,
+      "min_ms": 14.7,
+      "max_ms": 17.1,
+      "plain_median_ms": 15.1
+    },
+    "load": {
+      "rounds": 5,
+      "idle_working_set_mb": 8.4,
+      "idle_private_mb": 44.8,
+      "capped_working_set_mb": 16.8,
+      "first_20s_rps": 198726,
+      "warm_rps": 184875,
+      "warm_p99_ms": 1.35,
+      "capped_p99_ms": 4.19,
+      "plain_warm_rps": 184206
+    }
+  }
+}

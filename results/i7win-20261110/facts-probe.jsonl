@@ -1,0 +1,2 @@
+{"label":"spring","listen_ms":1229.698,"first_ms":1323.215,"status":200,"body_sha256":"9f21a85422ea41f84d402fa6937e825a8c8c349eb50ab83d2e64ddb7c7f37b4b","body_bytes":645,"attempts":27924,"pid":4424,"unix":1794301757.617667}
+{"label":"spring-aot","listen_ms":545.3,"first_ms":633.304,"status":200,"body_sha256":"9f21a85422ea41f84d402fa6937e825a8c8c349eb50ab83d2e64ddb7c7f37b4b","body_bytes":645,"attempts":12534,"pid":3952,"unix":1794301758.295478}
